@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Onest:wght@400;600&family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before
+{
+  box-sizing: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.squad-page
+{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.preview-button
+{
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: whitesmoke;
+}
+.preview-button
+{
+ margin-top: 500px;
+ margin-left: 100px;
+}
+.preview-button:hover
+{
+ transform: scale(1.01);
+}
+.preview-button:active
+{
+  background: #ffffff;
+}
+#preview-symbol
+{
+  font-size: 1rem;
+  padding-right: 10px;
+}
+.arrow-para
+{
+  font-weight: 400;
+  position: absolute;
+  top: 42.5pc;
+  margin-left: 6.5pc;
+}
+.arrow-style
+{
+ padding-left: 12.5rem;
+ font-size: 2rem;
+ position: absolute;
+ top: 42pc;
+ animation: scrollUpDown 1s infinite
+
+}
+
+/* ----------------------------for arrow  animation */
+ @keyframes scrollUpDown {
+            0%{
+                transform: translateY(20%) 
+               
+            }
+            50%{
+                transform: translateY(25%) ;
+             
+            }
+            100%{
+                transform: translateY(40%);
+            
+            }
+} 
+#us{
+  position: relative;
+  left: 60px;
+  font-size: 2.5rem;
+}
+#firstimage{
+  position: relative;
+  height: 440px;
+  left: 60px;
+}
+
+#firstpara{
+  position: relative;
+  left: 400px;
+}
+.fist-image,.third-image,.fifth-image{
+  display: flex;
+  position: relative;
+}
+.second-image,.fourth-image{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  right: 90px;
+}
+#secondpara,#fourthpara{
+  position: relative;
+  top: 25px;
+  right: 450px;
+}
+.second-image{
+  top: 200px;
+}
+.third-image{
+  top: 340px;
+}
+.fourth-image{
+  top: 540px;
+}
+.fifth-image{
+  top: 740px;
+}
+#explore-button{
+  position: absolute;
+  top: 468%;
+  left: 86%;
+  background-color: #165bbc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.gamestrigger{
+  position: relative;
+  top: 800px;
+  background-color: rgba(192, 192, 192, 0.735);
+  height: 190px;
+}
+#game-trigger{
+  position: absolute;
+  top: 120px;
+  left: 550px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  background-color: #393333;
+  width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
+}
+#cloud1{
+  position: relative;
+  left: 120px;
+  bottom: 30px;
+  height: 110px;
+  transition: opacity 0.5s;
+
+}
+#cloud2{
+  position: relative;
+  bottom: 20px;
+  left: 75px;
+  bottom: 50px;
+  height: 90px;
+  transition: opacity 0.5s;
+}
+#cloud3{
+  position: relative;
+  left: 490px;
+  bottom: 50px;
+  height: 100px;
+  transition: opacity 0.5s;
+ 
+}
+#cloud4{
+  position: relative;
+  left: 560px;
+  bottom: 40px;
+  height: 110px;
+  transition: opacity 0.5s;
+}
+#controller1{
+  position: relative;
+  bottom: 60px;
+  right: 200px;
+  height: 130px;
+}
+#controller2{
+  position: relative;
+  left: 370px;
+  top: 70px;
+  height: 140px;
+}
+.hidden{
+  opacity: 0;
+}
+ @keyframes flyer {
+  from{
+    bottom: 50px;
+  }
+  to{
+    left: -240px;
+  }
+} 
+@keyframes flyer2 {
+  from{
+    left: 120px;
+  }
+  to{
+    left: -170px;
+  }
+}
+@keyframes flyer3 {
+  from{
+    left: 560px;
+  }
+  to{
+    left: 890px;
+  }
+}
+@keyframes flyer4 {
+  from{
+    left: 560px;
+  }
+  to{
+    left: 990px;
+  }
+}
+.flyer{
+  animation: flyer 1s infinite;
+}
+.flyer2{
+  animation: flyer2 1s infinite;
+}
+.flyer3{
+  animation: flyer3 1s infinite;
+}
+.flyer4{
+  animation: flyer4 1s infinite;
+}
+/* -------------------------------------------------------------- */
+/* 
+  min-height: 200vh;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.navigator
+{
+  position: fixed;
+}
+.squad-page
+{
+  background-color: rgb(59, 59, 59);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+}
+.squad-page
+{
+  color: white;
+}
+.squad-logo
+{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.nav 
+{
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Onest', sans-serif;
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+color: white;
+font-size: 20px;
+margin-left: 20px;
+position: relative;
+left: 300px;
+top: 15px;
+transition: 1s;
+}
+.nav:hover
+{
+ font-size: large;
+}
+.preview
+{
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 1s;
+}
+.preview
+{
+  margin-top: 450px;
+  margin-left: 40px;
+}
+.preview:hover
+{
+  background: rgba(0, 0, 0, 0.338);
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+.scroll-down-button
+{
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Onest', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.scroll-down-button
+{
+  position: absolute;
+  top: 700px;
+  left: 50px;
+  animation: mymove 4s infinite
+}
+.arrows
+{
+  position: absolute;
+  top: -5px;
+  left: 100px;
+  animation: MoveUpDown 1s linear infinite;
+  font-size: 25px;
+}
+
+.arrows {
+  -webkit-animation: action 1s infinite  alternate;
+  animation: action 1s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+.portfolio
+{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: #ffffffff;
+  position: relative;
+  top: 200px;
+} */
