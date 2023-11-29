@@ -1,21 +1,10 @@
-const triggerbtn1 = document.getElementById("game-trigger")
-const hidden = document.getElementsByClassName("hidden")
-const flyer1 = document.getElementById("cloud3")
-const flyer2 = document.getElementById("cloud1")
-const flyer3 = document.getElementById("cloud2")
-const flyer4 = document.getElementById("cloud4")
-const animate = document.getElementsByClassName("flyer")
-const animate2 = document.getElementsByClassName("flyer2")
-const animate3 = document.getElementsByClassName("flyer3")
-const animate4 = document.getElementsByClassName("flyer4")
-
-triggerbtn1.addEventListener("click", () =>{
-    flyer1.classList.toggle("flyer");
-    flyer1.classList.toggle("hidden");
-    flyer2.classList.toggle("flyer2");
-    flyer2.classList.toggle("hidden");
-    flyer3.classList.toggle("flyer3");
-    flyer3.classList.toggle("hidden");
-    flyer4.classList.toggle("flyer4");
-    flyer4.classList.toggle("hidden")
-})
+document.getElementById('game-trigger').addEventListener('click', function () {
+    document.getElementById('cloud1').style.left = '-300px';
+    document.getElementById('cloud2').style.left = '-310px';
+    document.getElementById('cloud3').style.left = '1300px';
+    document.getElementById('cloud4').style.left = '1500px';
+    setTimeout(() => {
+        // paste you game showcase page here
+        location.href = "";
+    }, 300);
+});

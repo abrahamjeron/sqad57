@@ -12,6 +12,7 @@ body
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .squad-page
 {
@@ -64,8 +65,7 @@ body
  font-size: 2rem;
  position: absolute;
  top: 42pc;
- animation: scrollUpDown 1s infinite
-
+ animation: scrollUpDown 1s infinite;
 }
 
 /* ----------------------------for arrow  animation */
@@ -83,24 +83,66 @@ body
             
             }
 } 
+/* styles for changes i did */
 #us{
   position: relative;
   left: 60px;
   font-size: 2.5rem;
 }
-#firstimage{
+#firstimage,#secondimage,#thirdimage{
   position: relative;
   height: 440px;
-  left: 60px;
+  left: 100px;
 }
-
+#firstimage:hover{
+  height: 480px;
+  transition: all 0.8s;
+}
+#secondimage:hover{
+  height: 480px;
+  transition: 0.8s;
+}
+#thirdimage:hover{
+  height: 480px;
+  transition: 0.8s;
+}
 #firstpara{
   position: relative;
-  left: 400px;
+  top: 40px;
+  left: 170px;
+  font-size: 2.5rem;
+  width: 500px;
 }
-.fist-image,.third-image,.fifth-image{
+#first-para-contents{
+  position: relative;
+  top: 120px;
+  right: 325px;
+  font-size: 1.6rem;
+  width: 500px;
+  font-style: italic;
+  font-weight: lighter;
+}
+#second-para-contents{
+  position: relative;
+  top: 120px;
+  left: 210px;
+  font-size: 1.6rem;
+  width: 550px;
+  font-weight: lighter;
+  font-style: italic;
+}
+#third-para-contents{
+  position: relative;
+  top: 120px;
+  right: 220px;
+  font-size: 1.6rem;
+  width: 700px;
+  font-style: italic;
+}
+.fist-image,.third-image{
   display: flex;
   position: relative;
+  transition: all 2s;
 }
 .second-image,.fourth-image{
   display: flex;
@@ -108,13 +150,15 @@ body
   position: relative;
   right: 90px;
 }
-#secondpara,#fourthpara{
+#secondpara{
   position: relative;
-  top: 25px;
-  right: 450px;
+  top: 40px;
+  right: 340px;
+  font-size: 2.5rem;
 }
 .second-image{
   top: 200px;
+  right: 230px;
 }
 .third-image{
   top: 340px;
@@ -127,7 +171,7 @@ body
 }
 #explore-button{
   position: absolute;
-  top: 468%;
+  top: 390%;
   left: 86%;
   background-color: #165bbc;
   padding-top: 15px;
@@ -138,16 +182,55 @@ body
   text-decoration: none;
   border-radius: 5px;
 }
+#explore-button1{
+  position: absolute;
+  top: 74%;
+  left: 44%;
+  background-color: #1b1c1d;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#explore-button2{
+  position: absolute;
+  top: 81%;
+  left: 33%;
+  background-color: #1b1c1d;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#explore-button3{
+  position: absolute;
+  top: 85%;
+  left: 49%;
+  background-color: #1b1c1d;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 .gamestrigger{
   position: relative;
-  top: 800px;
+  top: 600px;
   background-color: rgba(192, 192, 192, 0.735);
   height: 190px;
 }
 #game-trigger{
   position: absolute;
   top: 120px;
-  left: 550px;
+  left: 650px;
   display: flex;
   justify-content: center;
   color: white;
@@ -159,13 +242,14 @@ body
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 50px;
+  animation: left-move;
 }
 #cloud1{
   position: relative;
   left: 120px;
   bottom: 30px;
   height: 110px;
-  transition: opacity 0.5s;
+  transition: 0.5s;
 
 }
 #cloud2{
@@ -174,22 +258,22 @@ body
   left: 75px;
   bottom: 50px;
   height: 90px;
-  transition: opacity 0.5s;
+  transition: 0.5s;
 }
 #cloud3{
   position: relative;
-  left: 490px;
+  left: 590px;
   bottom: 50px;
   height: 100px;
-  transition: opacity 0.5s;
+  transition: 0.5s;
  
 }
 #cloud4{
   position: relative;
-  left: 560px;
+  left: 660px;
   bottom: 40px;
   height: 110px;
-  transition: opacity 0.5s;
+  transition: 0.5s;
 }
 #controller1{
   position: relative;
@@ -199,176 +283,10 @@ body
 }
 #controller2{
   position: relative;
-  left: 370px;
+  left: 570px;
   top: 70px;
   height: 140px;
 }
 .hidden{
   opacity: 0;
 }
- @keyframes flyer {
-  from{
-    bottom: 50px;
-  }
-  to{
-    left: -240px;
-  }
-} 
-@keyframes flyer2 {
-  from{
-    left: 120px;
-  }
-  to{
-    left: -170px;
-  }
-}
-@keyframes flyer3 {
-  from{
-    left: 560px;
-  }
-  to{
-    left: 890px;
-  }
-}
-@keyframes flyer4 {
-  from{
-    left: 560px;
-  }
-  to{
-    left: 990px;
-  }
-}
-.flyer{
-  animation: flyer 1s infinite;
-}
-.flyer2{
-  animation: flyer2 1s infinite;
-}
-.flyer3{
-  animation: flyer3 1s infinite;
-}
-.flyer4{
-  animation: flyer4 1s infinite;
-}
-/* -------------------------------------------------------------- */
-/* 
-  min-height: 200vh;
-}
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: 0;
-}
-.navigator
-{
-  position: fixed;
-}
-.squad-page
-{
-  background-color: rgb(59, 59, 59);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 900px;
-}
-.squad-page
-{
-  color: white;
-}
-.squad-logo
-{
-  width: 200px;
-  height: 50px;
-  position: absolute;
-  top: 10px;
-  left: 20px;
-}
-.nav 
-{
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Onest', sans-serif;
-font-family: 'Poppins', sans-serif;
-text-decoration: none;
-color: white;
-font-size: 20px;
-margin-left: 20px;
-position: relative;
-left: 300px;
-top: 15px;
-transition: 1s;
-}
-.nav:hover
-{
- font-size: large;
-}
-.preview
-{
-  height: 50px;
-  width: 200px;
-  border: none;
-  border-radius: 10px;
-  font-size: 22px;
-  cursor: pointer;
-  transition: 1s;
-}
-.preview
-{
-  margin-top: 450px;
-  margin-left: 40px;
-}
-.preview:hover
-{
-  background: rgba(0, 0, 0, 0.338);
-  color: white;
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-}
-.scroll-down-button
-{
-  font-family: 'Bebas Neue', sans-serif;
-  font-family: 'Onest', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  color: white;
-}
-.scroll-down-button
-{
-  position: absolute;
-  top: 700px;
-  left: 50px;
-  animation: mymove 4s infinite
-}
-.arrows
-{
-  position: absolute;
-  top: -5px;
-  left: 100px;
-  animation: MoveUpDown 1s linear infinite;
-  font-size: 25px;
-}
-
-.arrows {
-  -webkit-animation: action 1s infinite  alternate;
-  animation: action 1s infinite  alternate;
-}
-
-@-webkit-keyframes action {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
-}
-
-@keyframes action {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
-}
-.portfolio
-{
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  color: #ffffffff;
-  position: relative;
-  top: 200px;
-} */
